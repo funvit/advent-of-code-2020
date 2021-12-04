@@ -11,3 +11,9 @@ Dir `puzzles` contains descriptions of puzzles for those who have not registered
 on AoC site.
 
 Single cmd file for any day or part solution.
+
+All solutions can be tested via:
+
+```shell
+$ make test
+```
