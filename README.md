@@ -1,5 +1,8 @@
 # Advent of code 2020
 
+[![Go](https://github.com/funvit/advent-of-code-2020/actions/workflows/go.yml/badge.svg)](https://github.com/funvit/advent-of-code-2020/actions/workflows/go.yml)
+
+
 ## Directory struct
 
 Dirs like `dayN` contains related day solution.
