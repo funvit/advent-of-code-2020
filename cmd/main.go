@@ -10,6 +10,7 @@ import (
 	"aoc2020/day2"
 	"aoc2020/day3"
 	"aoc2020/day4"
+	"aoc2020/day5"
 )
 
 func main() {
@@ -146,14 +147,27 @@ func main() {
 			},
 		)
 
+	case 5:
+		callPart(
+			part-1,
+			func() {
+				r := day5.Part1(lines)
+				printAnswerAndExit(r)
+			},
+			func() {
+				r := day5.Part2(lines)
+				printAnswerAndExit(r)
+			},
+		)
+
 	default:
-		fmt.Println("unknown day")
+		fmt.Println("Unknown day")
 	}
 }
 
 func callPart(index uint, fn ...func()) {
 	if index >= uint(len(fn)) {
-		fmt.Println("unknown part")
+		fmt.Println("Unknown part")
 		return
 	}
 	fn[index]()
